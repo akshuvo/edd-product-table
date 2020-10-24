@@ -3,7 +3,7 @@
  * Plugin Name: Easy Digital Downloads - Product Table
  * Plugin URI: https://plugins.addonmaster.com/eddpt/
  * Bitbucket Plugin URI: https://github.com/akshuvo/eddpt
- * Description: Product table for Easy Digital Downloads
+ * Description: A simple plugin that will help you build Product Table for Easy Digital Downloads
  * Author: AddonMaster
  * Author URI: https://addonmaster.com
  * Version: 1.0.0
