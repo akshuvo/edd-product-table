@@ -22,7 +22,7 @@
 include_once( ABSPATH . 'wp-admin/includes/plugin.php' );
 
 define( 'EDDPT_PLUGIN_URL', plugin_dir_url( __FILE__ ) );
-
+define('EDDPT_PLUGIN_VERSION', '1.0.0' );
 
 /**
  *	Plugin Main Class
@@ -50,6 +50,12 @@ if ( ! class_exists( 'Easy_Digital_Downloads_Product_Table' ) ) :
 			// Added plugin action link
 			add_filter( 'plugin_action_links_' . plugin_basename( __FILE__ ), array( $this, 'action_links' ) );
 
+			// Admin menu
+			add_action( 'admin_menu', [ $this, 'add_menu_page'] );
+
+			// Admin script
+			add_action( 'admin_enqueue_scripts', [ $this, 'admin_scripts'], 15 );
+
 		}
 
 		/**
@@ -57,7 +63,7 @@ if ( ! class_exists( 'Easy_Digital_Downloads_Product_Table' ) ) :
 		 */
 		function action_links( $links ) {
 			$plugin_links = array(
-				'<a href="' . admin_url( 'admin.php?page=_eddpt' ) . '">' . esc_html__( 'Settings', 'eddpt' ) . '</a>',
+				'<a href="' . admin_url( 'edit.php?post_type=download&page=eddpt-settings' ) . '">' . esc_html__( 'Settings', 'eddpt' ) . '</a>',
 			);
 			return array_merge( $plugin_links, $links );
 		}
@@ -70,18 +76,13 @@ if ( ! class_exists( 'Easy_Digital_Downloads_Product_Table' ) ) :
 			// Loading Text Domain for Internationalization
 			load_plugin_textdomain( 'eddpt', false, dirname( plugin_basename(__FILE__) ) . '/lang/' );
 
-			/**
-			 *	Plugin Functions
-			 */
+			// Plugin Functions
 			require_once( dirname( __FILE__ ) . '/inc/eddpt-functions.php' );
 
-			/**
-			 *	Table Layout
-			 */
+			// Table Layout
 			require_once( dirname( __FILE__ ) . '/inc/eddpt-layout.php' );
 
 		}
-
 
 		/**
 		 * Admin Action
@@ -90,6 +91,20 @@ if ( ! class_exists( 'Easy_Digital_Downloads_Product_Table' ) ) :
 
 			require_once( dirname( __FILE__ ) . '/inc/eddpt-admin.php' );
 
+		}
+
+		/**
+		 * Register menu page.
+		 */
+		function add_menu_page(){
+		    add_submenu_page(
+		    	'edit.php?post_type=download',
+	            __('Easy Digital Downloads - Product Table', 'eddpt'),
+	            __('Product Table', 'eddpt'),
+	            'manage_options',
+	            'eddpt-settings',
+	            'eddpt_admin_settings_page',
+	        );
 		}
 
 		/**
@@ -114,6 +129,15 @@ if ( ! class_exists( 'Easy_Digital_Downloads_Product_Table' ) ) :
             );
 		}
 
+		/**
+		 * Admin scripts
+		 */
+		function admin_scripts(){
+			$ver = current_time( 'timestamp' );
+
+		    wp_enqueue_style( 'eddpt-admin', EDDPT_PLUGIN_URL . '/assets/admin/css/am-setting-page.css', null, $ver );
+		    wp_enqueue_script( 'eddpt-admin', EDDPT_PLUGIN_URL . '/assets/admin/js/ampfe-admin.js', array('jquery'), $ver );
+		}
 
 		/**
 		 * EDD Plugin inactive Notice

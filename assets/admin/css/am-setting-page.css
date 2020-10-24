@@ -1,0 +1,329 @@
+/**
+ * Admin Page CSS
+ */
+
+.am-clearfix {
+}
+.am-clearfix:after, .am-clearfix:before, .am-container-fluid:after, .am-container-fluid:before, .am-container:after, .am-container:before, .am-row:after, .am-row:before {
+    content: " ";
+    display: table;
+}
+.am-row {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+.am-col-sm-9 {
+    width: 75%;
+}
+
+.am-col-sm-3 {
+    width: 25%;
+}
+
+.am-col-sm-12 {
+    width: 100%;
+}
+
+
+.am-col-sm-1, .am-col-sm-10, .am-col-sm-11, .am-col-sm-12, .am-col-sm-2, .am-col-sm-3, .am-col-sm-4, .am-col-sm-5, .am-col-sm-6, .am-col-sm-7, .am-col-sm-8, .am-col-sm-9 {
+    float: left;
+}
+.am-col-lg-1, .am-col-lg-10, .am-col-lg-11, .am-col-lg-12, .am-col-lg-2, .am-col-lg-3, .am-col-lg-4, .am-col-lg-5, .am-col-lg-6, .am-col-lg-7, .am-col-lg-8, .am-col-lg-9, .am-col-md-1, .am-col-md-10, .am-col-md-11, .am-col-md-12, .am-col-md-2, .am-col-md-3, .am-col-md-4, .am-col-md-5, .am-col-md-6, .am-col-md-7, .am-col-md-8, .am-col-md-9, .am-col-sm-1, .am-col-sm-10, .am-col-sm-11, .am-col-sm-12, .am-col-sm-2, .am-col-sm-3, .am-col-sm-4, .am-col-sm-5, .am-col-sm-6, .am-col-sm-7, .am-col-sm-8, .am-col-sm-9, .am-col-xs-1, .am-col-xs-10, .am-col-xs-11, .am-col-xs-12, .am-col-xs-2, .am-col-xs-3, .am-col-xs-4, .am-col-xs-5, .am-col-xs-6, .am-col-xs-7, .am-col-xs-8, .am-col-xs-9 {
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+#amadmin-dashboard {
+    position: relative;
+    font-size: 15px;
+    max-width: 100%;
+    margin: 25px auto 20px;
+    width: 100%;
+    overflow: hidden;
+}
+#amadmin-dashboard .notice {
+    display: none;
+}
+#amadmin-dashboard * {
+    box-sizing: border-box;
+}
+
+#amadmin-dashboard img,#amadmin-dashboard svg {
+    max-width: 100%;
+    margin: 0;
+    height: auto;
+    vertical-align: middle;
+}
+.amadmin-wrap h1 {
+    margin: .2em 200px 0 0;
+    padding: 0;
+    color: #32373c;
+    line-height: 1.2;
+    font-size: 2.8em;
+    font-weight: 400;
+}
+.am-welcome {
+    position: relative;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+.am-theme-version {
+    box-shadow: 0 3px 30px -4px rgba(52, 35, 172, 0.5);
+    text-shadow: none;
+    background: #4526a5;
+    background: linear-gradient(95deg,#3624ab 0,#752b91 50%,#d93668 100%);
+    text-align: center;
+    display: block;
+    padding: 10px 0;
+    color: #fff;
+    font-weight: 600;
+    margin-top: 10px;
+    border-radius: 2px;
+}
+
+.amsetting-wrap {
+    margin-top: 30px;
+}
+
+.am-box {
+    position: relative;
+    background: #fff;
+    padding: 0;
+    min-height: 310px;
+    box-shadow: 0 8px 16px rgba(0,0,0,.034);
+    border-radius: 0 4px 4px 4px;
+}
+
+
+.am-box-head {
+    font-weight: 600;
+    position: relative;
+    font-size: 20px;
+}
+
+
+.am-box-child, .am-box-content {
+    padding: 18px;
+    line-height: 24px;
+    font-size: 14px;
+}
+.am-box-head.is-dismisable span {
+    position: absolute;
+    line-height: 58px;
+    height: 100%;
+    top: 0;
+    right: 0;
+    left: unset;
+    cursor: pointer;
+    background: #fff;
+    padding: 0 16px;
+}
+
+.am-box-head.is-dismisable span i {
+    font-size: 24px;
+    vertical-align: sub;
+    color: #f2113e;
+}
+
+.am-tab-nav {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.am-tab-nav li {
+    text-align: center;
+    margin: 0;
+}
+
+.am-tab-nav li a {
+    display: block;
+    font-size: 15px;
+    text-decoration: none;
+    padding: 20px;
+    background: #f8f8f8;
+    color: #252525;
+    font-weight: 600;
+    margin-right: 2px;
+    border-radius: 4px 4px 0 0;
+    border-bottom: 1px solid #ededed;
+}
+
+.am-tab-nav li.active {}
+
+.am-tab-nav li.active a {
+    color: #3824aa;
+    background: #fff;
+    border-color: #fff;
+}
+
+.am-tab-nav li:not(.active) a:hover,
+.am-tab-nav li:not(.active) a:focus {
+    color: #3624aa;
+    background: #f9f9f9;
+    border-color: #3624aa;
+}
+
+.am-tab-nav li a:hover,
+.am-tab-nav li a:focus {
+    outline: 0;
+    box-shadow: none;
+}
+
+.am-tab-content {
+    display: none;
+}
+.am-tab-content.active {
+    display: block;
+}
+
+.am-col-sm-6 {
+    width: 50%;
+}
+
+.am-minibox {
+    background-color: #fff;
+    min-width: 250px;
+    margin: 10px 10px 25px 10px;
+    box-shadow: 0px 8px 38px 0px rgba(16, 16, 16, 0.07);
+    border-radius: 5px;
+    display: flex;
+    padding: 30px 20px;
+    max-width: 100%;
+    position: relative;
+}
+
+.icon-area {
+    min-width: 40px;
+    margin-right: 20px;
+    height: 40px;
+    background: #f1f1f1;
+    padding: 9px;
+    border-radius: 50%;
+    line-height: 1;
+}
+
+.am-content-area h4 {
+    margin-top: 0;
+    font-size: 15px;
+    margin-bottom: 0;
+    color: #000;
+}
+
+.am-content-area p {
+    margin-top: 0;
+}
+.am-btn-group {
+    display: flex;
+}
+
+.am-btn-group a {
+    text-decoration: none;
+}
+
+.am-main-btn {
+    color: #fff;
+    font-weight: 500;
+    border-radius: 2px;
+    box-shadow: 0 3px 10px -4px #008aff;
+    text-shadow: none;
+    background: #008aff;
+    background: linear-gradient(95deg,#36a2ff 0,#008aff 50%,#0072ff 100%);
+    border: none;
+    transition: .24s;
+    padding: 7px 16px;
+    cursor: pointer;
+    display: inline-block;
+    margin: 16px 4px 0 4px;
+    font-size: 13px;
+}
+
+
+.am-content,.am-content p {
+    font-size: 14px;
+    color: #4e4e4e;
+}
+
+.am-main-btn:hover,.am-main-btn:focus {
+    background: #222;
+    background: linear-gradient(95deg,#555 0,#222 50%,#000 100%);
+    box-shadow: 0 5px 21px -5px rgba(0,0,0,.5);
+    color: #fff;
+}
+
+/*Switch*/
+.am-switch input[type=checkbox]{
+    height: 0;
+    width: 0;
+    visibility: hidden;
+    box-shadow: none;
+    position: absolute;
+    margin: 0;
+}
+
+.am-switch label {
+    cursor: pointer;
+    text-indent: -9999px;
+    width: 50px;
+    height: 26px;
+    background: #cbcfd0;
+    display: block;
+    border-radius: 100px;
+    position: relative;
+    overflow: hidden;
+}
+
+.am-switch label:after {
+    content: '';
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 15px;
+    height: 15px;
+    background: #fff;
+    border-radius: 90px;
+    transition: 0.3s;
+}
+
+.am-switch input:checked + label {
+    background: #2426ca;
+    background: linear-gradient(90deg,#257bf9,#2426ca);
+}
+
+.am-switch input:checked + label:after {
+    left: calc(100% - 5px);
+    transform: translateX(-100%);
+}
+
+.am-switch label:active:after {
+    width: 40px;
+}
+
+.am-switch {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.am-minibox.addons-box {
+    padding: 20px 20px;
+    align-items: center;
+}
+
+.am-minibox.addons-box {}
+
+.addons-box .am-content-area {
+    padding-right: 65px;
+}
+
+.am-minibox.addons-box h4 {
+    line-height: 1;
+    color: #545658;
+}

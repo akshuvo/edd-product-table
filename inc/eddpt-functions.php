@@ -5,7 +5,7 @@ if ( !function_exists('eddpt_get_data_thumbnail') ) {
 	function eddpt_get_data_thumbnail( $post_id ){
 		?>
 		<?php if ( function_exists( 'has_post_thumbnail' ) && has_post_thumbnail( get_the_ID() ) ) : ?>
-			<div class="edd_download_image">
+			<div class="eddpt_download_image">
 				<?php echo get_the_post_thumbnail( get_the_ID(), 'thumbnail' ); ?>
 			</div>
 		<?php endif; ?>
@@ -31,11 +31,11 @@ if ( !function_exists('eddpt_get_data_content') ) {
 		<?php $excerpt_length = apply_filters( 'excerpt_length', 30 ); ?>
 		<?php $item_prop = edd_add_schema_microdata() ? ' itemprop="description"' : ''; ?>
 		<?php if ( has_excerpt() ) : ?>
-			<div<?php echo $item_prop; ?> class="edd_download_excerpt">
+			<div<?php echo $item_prop; ?> class="eddpt_download_excerpt">
 				<?php echo apply_filters( 'edd_downloads_excerpt', wp_trim_words( get_post_field( 'post_excerpt', get_the_ID() ), $excerpt_length ) ); ?>
 			</div>
 		<?php elseif ( get_the_content() ) : ?>
-			<div<?php echo $item_prop; ?> class="edd_download_excerpt">
+			<div<?php echo $item_prop; ?> class="eddpt_download_excerpt">
 				<?php echo apply_filters( 'edd_downloads_excerpt', wp_trim_words( get_post_field( 'post_content', get_the_ID() ), $excerpt_length ) ); ?>
 			</div>
 		<?php endif; ?>
@@ -66,7 +66,7 @@ add_action( 'eddpt_get_data_price', 'eddpt_get_data_price' );
 if ( !function_exists('eddpt_get_data_cart') ) {
 	function eddpt_get_data_cart( $post_id ){
 		?>
-		<div class="edd_download_buy_button">
+		<div class="eddpt_download_buy_button">
 			<?php echo edd_get_purchase_link( array( 'download_id' => get_the_ID() ) ); ?>
 		</div>
 		<?php

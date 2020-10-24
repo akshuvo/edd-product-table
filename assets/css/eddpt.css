@@ -1,0 +1,30 @@
+.eddpt-wrap .edd_download_purchase_form {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.eddpt-wrap .edd_price_options {
+    white-space: nowrap;
+    margin-right: 5px;
+}
+
+.eddpt-wrap .edd_download_quantity_wrapper {
+    margin-right: 5px;
+}
+
+.eddpt-price {
+    white-space: nowrap;
+    text-align: center;
+}
+
+.eddpt_download_image {
+    text-align: center;
+}
+
+.eddpt_download_image img {
+    width: 70px;
+}
+
+.eddpt_download_excerpt * {
+    margin: 0;
+}
