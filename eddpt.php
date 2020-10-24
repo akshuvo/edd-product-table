@@ -98,9 +98,14 @@ if ( ! class_exists( 'Easy_Digital_Downloads_Product_Table' ) ) :
 		function enqueue_scripts() {
 			$ver = current_time( 'timestamp' );
 
-		    wp_enqueue_style( 'eddpt', EDDPT_PLUGIN_URL . 'assets/css/eddpt.css', null, $ver );
+			// Data Tables
+		    wp_enqueue_style( 'dataTables', '//cdn.datatables.net/1.10.22/css/jquery.dataTables.min.css', null );
+		    wp_enqueue_script( 'dataTables', '//cdn.datatables.net/1.10.22/js/jquery.dataTables.min.js', array('jquery') );
 
+		    // Plugin Scripts
+		    wp_enqueue_style( 'eddpt', EDDPT_PLUGIN_URL . 'assets/css/eddpt.css', null, $ver );
 		    wp_enqueue_script( 'eddpt', EDDPT_PLUGIN_URL . 'assets/js/eddpt.js', array('jquery'), $ver );
+
 			wp_localize_script( 'eddpt', 'eddpt_ajax_vars',
             	array(
             	    'nonce' => wp_create_nonce( 'eddpt_nonce' ),
