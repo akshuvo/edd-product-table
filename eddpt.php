@@ -1,6 +1,6 @@
 <?php
 /**
- * Plugin Name: Easy Digital Downloads - Product Table
+ * Plugin Name: Product Table - Easy Digital Downloads
  * Plugin URI: https://plugins.addonmaster.com/eddpt/
  * Bitbucket Plugin URI: https://github.com/akshuvo/eddpt
  * Description: A simple plugin that will help you build Product Table for Easy Digital Downloads
@@ -114,8 +114,8 @@ if ( ! class_exists( 'Easy_Digital_Downloads_Product_Table' ) ) :
 			$ver = current_time( 'timestamp' );
 
 			// Data Tables
-		    wp_enqueue_style( 'dataTables', '//cdn.datatables.net/1.10.22/css/jquery.dataTables.min.css', null );
-		    wp_enqueue_script( 'dataTables', '//cdn.datatables.net/1.10.22/js/jquery.dataTables.min.js', array('jquery') );
+		    wp_enqueue_style( 'dataTables', EDDPT_PLUGIN_URL . 'assets/dataTables/css/jquery.dataTables.min.css', null );
+		    wp_enqueue_script( 'dataTables', EDDPT_PLUGIN_URL . 'assets/dataTables/js/jquery.dataTables.min.js', array('jquery') );
 
 		    // Plugin Scripts
 		    wp_enqueue_style( 'eddpt', EDDPT_PLUGIN_URL . 'assets/css/eddpt.css', null, $ver );

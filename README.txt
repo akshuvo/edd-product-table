@@ -1,4 +1,4 @@
-=== Easy Digital Downloads - Product Table ===
+=== Product Table - Easy Digital Downloads ===
 Contributors: mdshuvo
 Tags: easy-digital-downloads, easy-digital-downloads-table, product-table, edd-product-table, easy-digital-downloads-product-table,
 Tested up to: 5.5.1
