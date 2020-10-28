@@ -1,11 +1,19 @@
 **Plugin Name:** Easy Digital Downloads Product Table
+
 **Plugin URI:** https://wordpress.org/plugins/edd-product-table/
+
 **Description:** A simple plugin that will help you build Product Table for Easy Digital Downloads
+
 **Author:** AddonMaster
+
 **Author URI:** https://akhtarujjaman.com
+
 **Version:** 1.0.0
+
 **Text Domain:** eddpt
+
 **Domain Path:** /lang
+
 **EDD tested up to:** 2.9.23
 
 ![Banner](https://ps.w.org/edd-product-table/assets/banner-772x250.png)
