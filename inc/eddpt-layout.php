@@ -1,10 +1,12 @@
 <?php
 /**
- * The Layout
+ * The Layout Shortcode
+ *
+ * [eddpt]
  */
-add_shortcode('eddpt', 'eddpt_layout_function');
 function eddpt_layout_function( $atts ){
 
+    // Check Easy_Digital_Downloads activated
     if ( !class_exists( 'Easy_Digital_Downloads' ) ) {
         return;
     }
@@ -96,3 +98,4 @@ function eddpt_layout_function( $atts ){
     <?php
     return ob_get_clean();
 }
+add_shortcode('eddpt', 'eddpt_layout_function');

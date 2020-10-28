@@ -1,5 +1,7 @@
 <?php
-
+/**
+ * Setting Page
+ */
 function eddpt_admin_settings_page(){
 		?>
 	    <div id="amadmin-dashboard" class="wrap amadmin-wrap">
@@ -9,11 +11,12 @@ function eddpt_admin_settings_page(){
 			            <h1><?php esc_html_e( 'Easy Digital Downloads Product Table', 'eddpt' ); ?></h1>
 			            <div class="am-welcome">
 			                <!-- <p> -->
-			                <strong><?php esc_html_e( 'Easy Digital Downloads Product Table', 'eddpt' ); ?></strong> - <?php esc_html_e( 'Build product table easily', 'eddpt' ); ?><span><a href="" target="_blank"> <?php esc_html_e( 'Rate the plugin ★★★★★', 'eddpt' ); ?></a></span>
+			                <strong><?php esc_html_e( 'Easy Digital Downloads Product Table', 'eddpt' ); ?></strong> - <?php esc_html_e( 'Build product table easily', 'eddpt' ); ?><span><a href="https://wordpress.org/support/plugin/edd-product-table/reviews/#new-post" target="_blank"> <?php esc_html_e( 'Rate the plugin ★★★★★', 'eddpt' ); ?></a></span>
 			                <!-- </p> -->
 			            </div>
 			        </div>
 			        <div class="am-col-sm-3">
+			        	<img width="80" src="https://ps.w.org/edd-product-table/assets/icon-256x256.png">
 			            <span class="am-theme-version"><?php esc_html_e( 'Version', 'eddpt' ); ?> <?php echo esc_html( EDDPT_PLUGIN_VERSION ); ?></span>
 			        </div>
 			    </div>
@@ -68,8 +71,8 @@ function eddpt_admin_settings_page(){
 														</div>
 
 														<div class="am-btn-group">
-															<a href="#" target="_blank" class="am-main-btn"><?php esc_html_e( 'Support Forum', 'eddpt' ); ?></a>
-															<a href="https://github.com/akshuvo/eddpt" target="_blank" class="am-main-btn"><?php esc_html_e( 'Github', 'eddpt' ); ?></a>
+															<a href="https://wordpress.org/support/plugin/edd-product-table/" target="_blank" class="am-main-btn"><?php esc_html_e( 'Support Forum', 'eddpt' ); ?></a>
+															<a href="https://github.com/akshuvo/edd-product-table" target="_blank" class="am-main-btn"><?php esc_html_e( 'Github', 'eddpt' ); ?></a>
 														</div>
 													</div>
 												</div>

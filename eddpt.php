@@ -1,11 +1,11 @@
 <?php
 /**
  * Plugin Name: Product Table - Easy Digital Downloads
- * Plugin URI: https://plugins.addonmaster.com/eddpt/
- * Bitbucket Plugin URI: https://github.com/akshuvo/eddpt
+ * Plugin URI: https://wordpress.org/plugins/edd-product-table/
+ * Github Plugin URI: https://github.com/akshuvo/edd-product-table
  * Description: A simple plugin that will help you build Product Table for Easy Digital Downloads
  * Author: AddonMaster
- * Author URI: https://addonmaster.com
+ * Author URI: https://akhtarujjaman.com
  * Version: 1.0.0
  * Text Domain: eddpt
  * Domain Path: /lang
@@ -88,9 +88,7 @@ if ( ! class_exists( 'Easy_Digital_Downloads_Product_Table' ) ) :
 		 * Admin Action
 		 */
 		function admin_action() {
-
 			require_once( dirname( __FILE__ ) . '/inc/eddpt-admin.php' );
-
 		}
 
 		/**
@@ -99,7 +97,7 @@ if ( ! class_exists( 'Easy_Digital_Downloads_Product_Table' ) ) :
 		function add_menu_page(){
 		    add_submenu_page(
 		    	'edit.php?post_type=download',
-	            __('Easy Digital Downloads - Product Table', 'eddpt'),
+	            __('Product Table - Easy Digital Downloads by AddonMaster', 'eddpt'),
 	            __('Product Table', 'eddpt'),
 	            'manage_options',
 	            'eddpt-settings',
