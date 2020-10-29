@@ -99,7 +99,7 @@ function eddpt_admin_settings_page(){
 										<div class="am-row">
 											<div class="am-col-sm-12">
 												<div class="am-minibox addons-box">
-
+													Coming Soon
 												</div>
 											</div>
 										</div>
