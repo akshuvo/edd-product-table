@@ -34,6 +34,25 @@ No need to add any code on your theme core file. Just plug and play. A simple pl
 ### Hide table footer
 <code>[eddpt tfoot=false]</code>
 
+**For hide any column use the column key in shortcode like this.**
+
+### Hide Thumbnail column
+<code>[eddpt hidecol=thumbnail]</code>
+
+### Hide content column
+<code>[eddpt hidecol=content]</code>
+
+### Hide title column
+<code>[eddpt hidecol=title]</code>
+
+### Hide price column
+<code>[eddpt hidecol=price]</code>
+
+### Hide Add to cart button column
+<code>[eddpt hidecol=cart]</code>
+
+### Hide multiple table column
+<code>[eddpt hidecol=thumbnail,content,title,price,cart]</code>
 
 == Installation ==
 How to Product Table - Easy Digital Downloads.
@@ -61,6 +80,12 @@ Create Topic in [Support forum](https://wordpress.org/support/plugin/edd-product
 
 
 == Changelog ==
+
+= 1.0.1 =
+*29 Oct 2020*
+- Code fixed
+- Table colum hide option: [eddpt hidecol=thumbnail,content,title,price,cart]
+- Shortcode extends
 
 = 1.0.0 =
 - Initial release.

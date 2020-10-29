@@ -16,6 +16,7 @@ function eddpt_layout_function( $atts ){
         'id' => uniqid(),
         'thead' => true,
         'tfoot' => true,
+        'hidecol' => "",
     ) );
 
     // Before extract
@@ -39,6 +40,15 @@ function eddpt_layout_function( $atts ){
         'price'      => esc_html__( 'Price', 'eddpt' ),
         'cart'      => esc_html__( 'Add to cart', 'eddpt' ),
     ) );
+
+    $hidecol = ( $hidecol ) ? array_filter( explode(',', $hidecol) ) : array();
+
+    // Hide column from args
+    foreach ( $table_columns as $key => $table_column ) {
+        if ( in_array( $key, $hidecol) ) {
+            unset( $table_columns[$key] );
+        }
+    }
 
     ob_start();
 

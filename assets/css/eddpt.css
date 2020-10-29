@@ -28,3 +28,9 @@
 .eddpt_download_excerpt * {
     margin: 0;
 }
+
+table.dataTable thead th, table.dataTable thead td,
+table.dataTable tfoot th, table.dataTable tfoot td {
+    border-color: inherit;
+}
+
