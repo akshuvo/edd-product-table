@@ -6,7 +6,7 @@
  * Description: A simple plugin that will help you build Product Table for Easy Digital Downloads
  * Author: AddonMaster
  * Author URI: https://addonmaster.com/about-us/shuvo
- * Version: 1.1.0
+ * Version: 1.1.1
  * Text Domain: eddpt
  * Domain Path: /lang
  * EDD tested up to: 2.9.26
@@ -22,7 +22,7 @@
 include_once( ABSPATH . 'wp-admin/includes/plugin.php' );
 
 define( 'EDDPT_PLUGIN_URL', plugin_dir_url( __FILE__ ) );
-define('EDDPT_PLUGIN_VERSION', '1.1.0' );
+define('EDDPT_PLUGIN_VERSION', '1.1.1' );
 
 /**
  *	Plugin Main Class

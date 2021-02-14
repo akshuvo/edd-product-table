@@ -1,7 +1,7 @@
 === Product Table - Easy Digital Downloads ===
 Contributors: mdshuvo, addonmaster
 Tags: easy-digital-downloads, easy-digital-downloads-table, product-table, edd-product-table, easy-digital-downloads-product-table, direct-checkout, onepage-checkout, fly-cart
-Tested up to: 5.5.1
+Tested up to: 5.6.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 

@@ -8,13 +8,12 @@
 
 **Author URI:** https://addonmaster.com/about-us/shuvo
 
-**Version:** 1.0.0
+**Version:** 1.1.1
 
 **Text Domain:** eddpt
 
 **Domain Path:** /lang
 
-**EDD tested up to:** 2.9.23
 
 ![Banner](https://ps.w.org/edd-product-table/assets/banner-772x250.png)
 
