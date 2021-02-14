@@ -5,7 +5,7 @@
  * Github Plugin URI: https://github.com/akshuvo/edd-product-table
  * Description: A simple plugin that will help you build Product Table for Easy Digital Downloads
  * Author: AddonMaster
- * Author URI: https://akhtarujjaman.com
+ * Author URI: https://addonmaster.com/about-us/shuvo
  * Version: 1.1.0
  * Text Domain: eddpt
  * Domain Path: /lang

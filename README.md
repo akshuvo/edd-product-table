@@ -6,7 +6,7 @@
 
 **Author:** AddonMaster
 
-**Author URI:** https://akhtarujjaman.com
+**Author URI:** https://addonmaster.com/about-us/shuvo
 
 **Version:** 1.0.0
 

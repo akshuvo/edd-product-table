@@ -1,6 +1,6 @@
 === Product Table - Easy Digital Downloads ===
-Contributors: mdshuvo
-Tags: easy-digital-downloads, easy-digital-downloads-table, product-table, edd-product-table, easy-digital-downloads-product-table,
+Contributors: mdshuvo, addonmaster
+Tags: easy-digital-downloads, easy-digital-downloads-table, product-table, edd-product-table, easy-digital-downloads-product-table, direct-checkout, onepage-checkout, fly-cart
 Tested up to: 5.5.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -70,7 +70,7 @@ How to Product Table - Easy Digital Downloads.
 Just install and Use this <code>[eddpt]</code> shortcode anywhere.
 
 = I need some custom help? =
-Contact: akhtarujjamanshuvo@gmail.com
+Contact: addonmasterwp@gmail.com
 
 = Questions/Suggestions/Support?  =
 Create Topic in [Support forum](https://wordpress.org/support/plugin/edd-product-table/) or Create issue on [Github](https://github.com/akshuvo/edd-product-table/issues)
