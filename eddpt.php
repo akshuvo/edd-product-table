@@ -6,10 +6,10 @@
  * Description: A simple plugin that will help you build Product Table for Easy Digital Downloads
  * Author: AddonMaster
  * Author URI: https://akhtarujjaman.com
- * Version: 1.0.1
+ * Version: 1.1.0
  * Text Domain: eddpt
  * Domain Path: /lang
- * EDD tested up to: 2.9.23
+ * EDD tested up to: 2.9.26
  *
  */
 
@@ -22,7 +22,7 @@
 include_once( ABSPATH . 'wp-admin/includes/plugin.php' );
 
 define( 'EDDPT_PLUGIN_URL', plugin_dir_url( __FILE__ ) );
-define('EDDPT_PLUGIN_VERSION', '1.0.1' );
+define('EDDPT_PLUGIN_VERSION', '1.1.0' );
 
 /**
  *	Plugin Main Class
@@ -95,6 +95,15 @@ if ( ! class_exists( 'Easy_Digital_Downloads_Product_Table' ) ) :
 		 * Register menu page.
 		 */
 		function add_menu_page(){
+			add_menu_page(
+		        __('Product Table - Easy Digital Downloads by AddonMaster', 'eddpt'),
+	            __('EDD Product Table', 'eddpt'),
+		        'manage_options',
+		        'edit.php?post_type=download&page=eddpt-settings',
+		        '',
+		        'dashicons-editor-ul',
+		    );
+
 		    add_submenu_page(
 		    	'edit.php?post_type=download',
 	            __('Product Table - Easy Digital Downloads by AddonMaster', 'eddpt'),

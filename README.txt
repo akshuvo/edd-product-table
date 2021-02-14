@@ -81,6 +81,10 @@ Create Topic in [Support forum](https://wordpress.org/support/plugin/edd-product
 
 == Changelog ==
 
+= 1.1.0 =
+*14 Feb 2021*
+- Capability Check
+
 = 1.0.1 =
 *29 Oct 2020*
 - Code fixed
